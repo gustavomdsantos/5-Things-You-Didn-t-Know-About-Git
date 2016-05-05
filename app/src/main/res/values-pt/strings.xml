@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">5 coisas que você não sabia sobre o Git</string>
+    <string name="thing_1">Criando novos commits no meio do histórico</string>
+    <string name="thing_2">Commitando como outra pessoa</string>
+    <string name="thing_3">Commitando em qualquer data</string>
+    <string name="thing_4">Masterizando Git tags</string>
+    <string name="thing_5">Adotando boas práticas de desenvolvimento de software com Git</string>
+</resources>
