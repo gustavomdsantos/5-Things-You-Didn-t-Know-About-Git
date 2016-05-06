@@ -7,7 +7,7 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/icon_5_things_git_white__svg"/>
+            android:src="@drawable/icon_5_things_git_white__png"/>
     </item>
 
 </layer-list>
