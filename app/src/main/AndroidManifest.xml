@@ -15,6 +15,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".NewCommitsActivity"/>
+        <activity android:name=".CommittingPersonActivity"/>
+        <activity android:name=".CommittingDateActivity"/>
+        <activity android:name=".MasteringGitTagsActivity"/>
+        <activity android:name=".BestPracticesActivity"/>
     </application>
 
 </manifest>
