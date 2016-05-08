@@ -6,4 +6,5 @@
     <string name="thing_3">Commitando em qualquer data</string>
     <string name="thing_4">Masterizando Git tags</string>
     <string name="thing_5">Adotando boas práticas de desenvolvimento de software com Git</string>
+    <string name="title_activity_repository_name">Nome do repositório</string>
 </resources>

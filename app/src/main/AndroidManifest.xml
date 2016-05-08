@@ -20,6 +20,14 @@
         <activity android:name=".CommittingDateActivity"/>
         <activity android:name=".MasteringGitTagsActivity"/>
         <activity android:name=".BestPracticesActivity"/>
+        <activity
+            android:name=".RepositoryNameActivity"
+            android:label="@string/title_activity_repository_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

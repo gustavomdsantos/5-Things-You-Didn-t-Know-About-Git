@@ -1,8 +1,10 @@
 package com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.controller;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 
+import com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.RepositoryNameActivity;
 import com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.model.Repository;
 
 /**
@@ -13,6 +15,9 @@ public class RepositoryController {
     {
         if (repository.getName().isEmpty()) {
             Log.w("informacao", "Repositório está vazio");
+            Intent intent = new Intent(activityToShow, RepositoryNameActivity.class);
+            activityToShow.startActivity(intent);
+
         }
     }
 }
