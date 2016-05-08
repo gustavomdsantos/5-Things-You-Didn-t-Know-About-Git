@@ -15,12 +15,16 @@ public class MainActivity extends AppCompatActivity {
         setButtonLinks();
     }
 
+    /**
+     * Sets onClick event programmatically instead of setting it in XML files
+     * (both Landscape XML and Portrait XML)
+     */
     private void setButtonLinks(){
         Button thing1 = (Button) findViewById(R.id.thing1);
         thing1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClick$NewCommitsActivity(view);
+                onClick_AnyButtonInMainActivity(R.id.thing1);
             }
         });
 
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         thing2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClick$CommittingPersonActivity(view);
+                onClick_AnyButtonInMainActivity(R.id.thing2);
             }
         });
 
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         thing3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClick$CommittingDateActivity(view);
+                onClick_AnyButtonInMainActivity(R.id.thing3);
             }
         });
 
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         thing4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClick$MasteringGitTagsActivity(view);
+                onClick_AnyButtonInMainActivity(R.id.thing4);
             }
         });
 
@@ -52,38 +56,39 @@ public class MainActivity extends AppCompatActivity {
         thing5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClick$BestPracticesActivity(view);
+                onClick_AnyButtonInMainActivity(R.id.thing5);
             }
         });
     }
 
-    public void onClick$NewCommitsActivity(View view) {
+    /**
+     * Opens the activity related to the button in the row of buttons in MainActivity View
+     * @param R_id_thingX The ID of the pressed button
+     */
+    public void onClick_AnyButtonInMainActivity(int R_id_thingX)
+    {
+        Intent intent;
+        Class desiredActivity = null; // Target Java class (an Activity)
 
-        Intent intent = new Intent(MainActivity.this, NewCommitsActivity.class);
-        startActivity(intent);
-    }
-
-    public void onClick$CommittingPersonActivity(View view) {
-
-        Intent intent = new Intent(MainActivity.this, CommittingPersonActivity.class);
-        startActivity(intent);
-    }
-
-    public void onClick$CommittingDateActivity(View view) {
-
-        Intent intent = new Intent(MainActivity.this, CommittingDateActivity.class);
-        startActivity(intent);
-    }
-
-    public void onClick$MasteringGitTagsActivity(View view) {
-
-        Intent intent = new Intent(MainActivity.this, MasteringGitTagsActivity.class);
-        startActivity(intent);
-    }
-
-    public void onClick$BestPracticesActivity(View view) {
-
-        Intent intent = new Intent(MainActivity.this, BestPracticesActivity.class);
+        switch (R_id_thingX)
+        {
+            case R.id.thing1:
+                desiredActivity = NewCommitsActivity.class;
+                break;
+            case R.id.thing2:
+                desiredActivity = CommittingPersonActivity.class;
+                break;
+            case R.id.thing3:
+                desiredActivity = CommittingDateActivity.class;
+                break;
+            case R.id.thing4:
+                desiredActivity = MasteringGitTagsActivity.class;
+                break;
+            case R.id.thing5:
+                desiredActivity = BestPracticesActivity.class;
+                break;
+        }
+        intent = new Intent(MainActivity.this, desiredActivity);
         startActivity(intent);
     }
 }
