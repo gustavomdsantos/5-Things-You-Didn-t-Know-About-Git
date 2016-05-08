@@ -102,4 +102,12 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(MainActivity.this, desiredActivity);
         startActivity(intent);
     }
+
+    /**
+     * Makes the app exit.
+     */
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
 }
