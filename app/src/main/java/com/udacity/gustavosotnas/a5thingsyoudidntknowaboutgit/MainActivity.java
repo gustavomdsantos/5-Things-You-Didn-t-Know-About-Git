@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Makes the app exit.
+     * When user press "Back" button in this activity, the app will exit.
      */
     @Override
     public void onBackPressed() {
