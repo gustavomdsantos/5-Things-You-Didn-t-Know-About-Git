@@ -12,7 +12,7 @@
     <string name="save">Salvar</string>
     <string name="use_default_name">Usar nome padrão</string>
     <string name="newcommits_1">1. Commite o que você quiser</string>
-    <string name="newcommits_2">2 . Faça um Git Rebase-Interativo para o ponto do histórico (commit) que você quer reescrever:</string>
+    <string name="newcommits_2">2. Faça um Git Rebase-Interativo para o ponto do histórico (commit) que você quer reescrever:</string>
     <string name="newcommits_3">3. No editor, faça a reorganização dos commits no arquivo, de acordo com os comandos de Git Rebase listados: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History</string>
     <string name="newcommits_2_obs_1">com a hash SHA do commit \"HEAD temporário\" (commit \"pai\" do que você quer editar, não o novo commit para incluir!)</string>
     <string name="newcommits_or">ou...</string>
