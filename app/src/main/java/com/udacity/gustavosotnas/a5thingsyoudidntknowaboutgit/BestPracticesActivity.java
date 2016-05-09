@@ -13,7 +13,6 @@ public class BestPracticesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newcommits);
-        getSupportActionBar().setTitle("BestPracticesActivity");
         RepositoryController.verifySetRepositoryName(this, MainActivity.getRepository());
     }
 }
