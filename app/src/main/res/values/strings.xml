@@ -10,4 +10,14 @@
     <string name="hint_activity_repository">my-git-repository</string>
     <string name="save">Save</string>
     <string name="use_default_name">Use default name</string>
+    <string name="newcommits_1">1. Commit what do you want</string>
+    <string name="newcommits_2">2. Do a Git Interactive-Rebase to the point of history (commit) you want to do rewrite the history:</string>
+    <string name="newcommits_cmd_1" translatable="false">git rebase -i 1ec6d53</string>
+    <string name="newcommits_3">3. In the editor, do the reorganization of the commits in the file, according to the Git Rebase commands listed: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History</string>
+    <string name="newcommits_2_obs_1">with the SHA hash of the \"temporary HEAD\" commit (\"parent\" commit of what you want to edit, not the new commit to include!)</string>
+    <string name="newcommits_or">or...</string>
+    <string name="newcommits_cmd_2" translatable="false">git rebase -i HEAD~3</string>
+    <string name="newcommits_2_obs_2">that rollbacks 3 commits, for example.</string>
+    <string name="newcommits_4">4. The modified commits with Rebase now have different Commiter and CommitDate. To undo this (\"Author\" and \"AuthorDate\" be the same that \"Commiter\" and \"CommitDate\"), use the following command:</string>
+    <string name="newcommits_cmd_3" translatable="false">git filter-branch -f --env-filter \'GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE; GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME; GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL; export GIT_COMMITTER_DATE GIT_COMMITTER_NAME GIT_COMMITTER_EMAIL\'</string>
 </resources>
