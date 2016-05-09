@@ -6,13 +6,31 @@ package com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.model;
  */
 public class Repository {
 
-    private String name = "";
+    private String repositoryName = "";
+    private String authorName = "";
+    private String authorEmail = "";
 
     public String getName() {
-        return name;
+        return repositoryName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.repositoryName = name;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
+
+    public String getAuthorEmail() {
+        return authorEmail;
+    }
+
+    public void setAuthorEmail(String authorEmail) {
+        this.authorEmail = authorEmail;
     }
 }

@@ -6,9 +6,9 @@
     <string name="thing_3">Commitando em qualquer data</string>
     <string name="thing_4">Masterizando Git tags</string>
     <string name="thing_5">Adotando boas práticas de desenvolvimento de software com Git</string>
-    <string name="title_activity_repository_name">Nome do repositório</string>
-    <string name="subtitle_activity_repository">O nome do seu repositório será usado no conteúdo dos textos do aplicativo.</string>
-    <string name="hint_activity_repository">meu-repositorio-git</string>
+    <string name="title_activity_repository_name">Informações do repositório</string>
+    <string name="subtitle_activity_repository">As informações do seu repositório será usado no conteúdo dos textos do aplicativo.</string>
+    <string name="hint_activity_repository">Nome do repositório Git (ex.: @string/example_repository_name)</string>
     <string name="save">Salvar</string>
     <string name="use_default_name">Usar nome padrão</string>
     <string name="newcommits_1">1. Commite o que você quiser</string>
@@ -19,4 +19,7 @@
     <string name="newcommits_2_obs_2">que volta 3 commits, por exemplo.</string>
     <string name="newcommits_4">4. Os commits modificados com Rebase agora tem commitador e data do commit diferentes. Para desfazer isso (\"Author\" e \"AuthorDate\" ser o mesmo que \"Commiter\" e \"CommitDate\"), use o seguinte comando:</string>
     <string name="newcommits_4_obs_1">4.1. Se os commits não tem um Author e/ou Email (ou se você quiser fazer todos os commits ficarem com um único autor) use:</string>
+    <string name="hint_activity_repository_2">AuthorName usado no Git (ex.: @string/example_repository_name)</string>
+    <string name="hint_activity_repository_3">AuthorEmail usado no Git (ex.: @string/example_repository_name)</string>
+    <string name="example_repository_name">meu-repositorio-git</string>
 </resources>
