@@ -15,11 +15,36 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".NewCommitsActivity" android:label="@string/thing_1"/>
-        <activity android:name=".CommittingPersonActivity" android:label="@string/thing_2"/>
-        <activity android:name=".CommittingDateActivity" android:label="@string/thing_3"/>
-        <activity android:name=".MasteringGitTagsActivity" android:label="@string/thing_4"/>
-        <activity android:name=".BestPracticesActivity" android:label="@string/thing_5"/>
+        <activity android:name=".NewCommitsActivity" android:label="@string/thing_1"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.MainActivity" />
+        </activity>
+        <activity android:name=".CommittingPersonActivity" android:label="@string/thing_2"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.MainActivity" />
+        </activity>
+        <activity android:name=".CommittingDateActivity" android:label="@string/thing_3"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.MainActivity" />
+        </activity>
+        <activity android:name=".MasteringGitTagsActivity" android:label="@string/thing_4"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.MainActivity" />
+        </activity>
+        <activity android:name=".BestPracticesActivity" android:label="@string/thing_5"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit.MainActivity" />
+        </activity>
         <activity
             android:name=".RepositoryNameActivity"
             android:label="@string/title_activity_repository_name"
