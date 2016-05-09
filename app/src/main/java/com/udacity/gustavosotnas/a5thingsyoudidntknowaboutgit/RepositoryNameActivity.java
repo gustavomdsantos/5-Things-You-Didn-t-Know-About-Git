@@ -2,7 +2,6 @@ package com.udacity.gustavosotnas.a5thingsyoudidntknowaboutgit;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,10 +25,8 @@ public class RepositoryNameActivity extends AppCompatActivity {
      */
     public void concatenateResStrings()
     {
-        Resources res = getResources();
-
-        String example = res.getString(R.string.example_repository_name);
-        String title = res.getString(R.string.hint_activity_repository, example);
+        Context c = RepositoryNameActivity.this.getApplicationContext();
+        c.getString(R.string.hint_activity_repository, "Abobrinha");
     }
 
     /**

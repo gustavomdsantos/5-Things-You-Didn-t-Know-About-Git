@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
     <string name="app_name">5 Things You Didn\'t Know About Git</string>
     <string name="thing_1">Creating new commits in the middle of the commit history</string>
     <string name="thing_2">Committing as another person</string>
@@ -24,5 +24,5 @@
     <string name="hint_activity_repository_2">AuthorName used in Git (ex.: %1$s)</string>
     <string name="hint_activity_repository_3">AuthorEmail used in Git (ex.: %1$s)</string>
     <string name="example_repository_name">my-git-repository</string>
-    <string name="hint_activity_repository">Git repository name (ex.: @string/example_repository_name)</string>
+    <string name="hint_activity_repository">Git repository name (ex.: <xliff:g name="name">%s</xliff:g>)</string>
 </resources>

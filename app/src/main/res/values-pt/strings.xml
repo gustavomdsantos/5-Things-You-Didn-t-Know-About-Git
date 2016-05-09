@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "WhereDat">
+    <!ENTITY author "Oded">
+    ]>
 <resources>
     <string name="app_name">5 coisas que você não sabia sobre o Git</string>
     <string name="thing_1">Criando novos commits no meio do histórico</string>
