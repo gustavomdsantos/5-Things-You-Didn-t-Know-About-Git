@@ -14,10 +14,8 @@ public class RepositoryController {
     public static void verifySetRepositoryName(Activity activityToShow, Repository repository)
     {
         if (repository.getName().isEmpty()) {
-            Log.w("informacao", "Repositório está vazio");
             Intent intent = new Intent(activityToShow, RepositoryNameActivity.class);
             activityToShow.startActivity(intent);
-
         }
     }
 }
