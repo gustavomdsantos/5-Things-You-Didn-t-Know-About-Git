@@ -17,16 +17,7 @@ public class RepositoryNameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_repository_name);
 
-        focusKeyboard(R.id.repositoryNameEditText);
-    }
-
-    /**
-     * String title = res.getString(R.string.title, appName);
-     */
-    public void concatenateResStrings()
-    {
-        Context c = RepositoryNameActivity.this.getApplicationContext();
-        c.getString(R.string.hint_activity_repository, "Abobrinha");
+        focusKeyboard(R.id.repositoryEditText);
     }
 
     /**
@@ -75,7 +66,7 @@ public class RepositoryNameActivity extends AppCompatActivity {
      */
     public void onClick$saveRepositoryName(View view)
     {
-        EditText editText = (EditText) findViewById(R.id.repositoryNameEditText);
+        EditText editText = (EditText) findViewById(R.id.repositoryEditText);
         MainActivity.getRepository().setName(editText.getText().toString());
 
         unfocusKeyboard(); // hides keyboard
