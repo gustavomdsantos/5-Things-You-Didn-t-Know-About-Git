@@ -18,4 +18,5 @@
     <string name="newcommits_or">ou...</string>
     <string name="newcommits_2_obs_2">que volta 3 commits, por exemplo.</string>
     <string name="newcommits_4">4. Os commits modificados com Rebase agora tem commitador e data do commit diferentes. Para desfazer isso (\"Author\" e \"AuthorDate\" ser o mesmo que \"Commiter\" e \"CommitDate\"), use o seguinte comando:</string>
+    <string name="newcommits_4_obs_1">4.1. Se os commits não tem um Author e/ou Email (ou se você quiser fazer todos os commits ficarem com um único autor) use:</string>
 </resources>

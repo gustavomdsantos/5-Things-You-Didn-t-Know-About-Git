@@ -40,7 +40,7 @@
                 android:text="@string/newcommits_cmd_1"/>
 
             <TextView
-                android:id="@+id/textView2_obs1"
+                android:id="@+id/textView2_obs_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp" android:layout_marginRight="8dp"
@@ -50,6 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:textStyle="bold"
                 android:text="@string/newcommits_or"/>
 
             <TextView
@@ -62,7 +63,7 @@
                 android:text="@string/newcommits_cmd_2"/>
 
             <TextView
-                android:id="@+id/textView2_obs2"
+                android:id="@+id/textView2_obs_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
@@ -87,6 +88,26 @@
                 android:layout_margin="8dp"
                 android:fontFamily="monospace"
                 android:text="@string/newcommits_cmd_3"/>
+            <TextView
+                android:id="@+id/textView4_obs_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:text="@string/newcommits_or"/>
+            <TextView
+                android:id="@+id/textView4_obs_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/newcommits_4_obs_1"/>
+            <TextView
+                android:id="@+id/textView_cmd_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="monospace"
+                android:text="@string/newcommits_cmd_4"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
