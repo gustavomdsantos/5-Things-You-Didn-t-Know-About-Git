@@ -40,6 +40,8 @@ public class RepositoryNameActivity extends AppCompatActivity {
     public void onClick$defaultRepositoryName(View view)
     {
         MainActivity.getRepository().setName(getResources().getString(R.string.hint_activity_repository));
+
+        finish(); // closes the activity
     }
 
     /**
@@ -53,7 +55,7 @@ public class RepositoryNameActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.repositoryEditText);
         MainActivity.getRepository().setName(editText.getText().toString());
 
-        finish();
+        finish(); // closes the activity
     }
 
     /**
