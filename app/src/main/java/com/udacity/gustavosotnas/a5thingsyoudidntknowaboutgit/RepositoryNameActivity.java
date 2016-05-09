@@ -32,6 +32,19 @@ public class RepositoryNameActivity extends AppCompatActivity {
     }
 
     /**
+     * Forces Android to hide the virtual keyboard, unfocusing the focused element.
+     */
+    private void unfocusKeyboard()
+    {
+        // Check if no view has focus:
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+    }
+
+    /**
      * When user clicks in "use_default_name_button", the app sets the hint
      * text of the editText to the name of the Git repository in the static
      * Repository variable in MainActivity.
@@ -41,6 +54,7 @@ public class RepositoryNameActivity extends AppCompatActivity {
     {
         MainActivity.getRepository().setName(getResources().getString(R.string.hint_activity_repository));
 
+        unfocusKeyboard(); // hides keyboard
         finish(); // closes the activity
     }
 
@@ -55,6 +69,7 @@ public class RepositoryNameActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.repositoryEditText);
         MainActivity.getRepository().setName(editText.getText().toString());
 
+        unfocusKeyboard(); // hides keyboard
         finish(); // closes the activity
     }
 
