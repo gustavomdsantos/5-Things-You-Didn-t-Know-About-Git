@@ -19,4 +19,21 @@
     <string name="newcommits_2_obs_2">que volta 3 commits, por exemplo.</string>
     <string name="newcommits_4">4. Os commits modificados com Rebase agora tem commitador e data do commit diferentes. Para desfazer isso (\"Author\" e \"AuthorDate\" ser o mesmo que \"Commiter\" e \"CommitDate\"), use o seguinte comando:</string>
     <string name="newcommits_4_obs_1">4.1. Se os commits não tem um Author e/ou Email (ou se você quiser fazer todos os commits ficarem com um único autor) use:</string>
+
+    <string name="committing_person_1">1. Criar um commit usando credenciais de outra pessoa é util
+        para quando um grupo tiver usando o computador de um colega de projeto para criar ou
+        modificar um código, e a pessoa não quer modificar as configurações de `Git config
+        \"username\" and \"email\"` (uma atividade de programação em pares como no
+        <a href="https://en.wikipedia.org/wiki/Extreme_programming">XP</a>, por exemplo). Criar um
+        commit como outra pessoa é relativamente fácil. Mas primeiro, veja o histórico detalhado de
+        commits do seu repositório:</string>
+    <string name="committing_person_1_obs_1">Note na lista de commits que temos dois campos
+        idênticos com outros dois campos: <i>Author</i> com <i>Commit</i>, e <i>AuthorDate</i>
+        com <i>CommitDate</i>. Iremos escrever os valores desses campos manualmente dessa forma:
+    </string>
+    <string name="committing_person_1_obs_2">Substituindo os valores de acordo com suas necessidades.
+    </string>
+    <string name="committing_person_1_1">1.1. Você pode combinar isto com <i>amend</i> ou <i>rebase
+        interativo</i>, até commitar em qualquer data, como
+        neste exemplo:</string>
 </resources>

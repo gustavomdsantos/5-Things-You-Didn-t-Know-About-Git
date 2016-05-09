@@ -22,4 +22,27 @@
     <string name="newcommits_cmd_3" translatable="false">git filter-branch -f --env-filter \'GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE; GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME; GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL; export GIT_COMMITTER_DATE GIT_COMMITTER_NAME GIT_COMMITTER_EMAIL\'</string>
     <string name="newcommits_4_obs_1">4.1. If the commits don\'t have Author and/or Email (or if you want to make all the commits have with only one author) use:</string>
     <string name="newcommits_cmd_4" translatable="false">git filter-branch -f --env-filter \'GIT_AUTHOR_NAME=\"Fulano de Tal\"; GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME; GIT_AUTHOR_EMAIL=\"fulano@example.com\"; GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL; export GIT_COMMITTER_NAME GIT_COMMITTER_EMAIL\'</string>
+
+    <string name="committing_person_1">1. Create a commit using another person\'s credentials is
+        useful for when a group has been using the project colleague\'s computer to create or modify
+        a code, and the person does not want to modify the `Git config settings \"username\" and
+        \"email\"` (a programming task to do in pairs like in
+        <a href="https://en.wikipedia.org/wiki/Extreme_programming">XP</a>, for example).
+        Create a commit as another person is fairly simple. But first, look the detailed history of
+        commits of your repository:</string>
+    <string name="committing_person_cmd_1" translatable="false">git log --format=fuller</string>
+    <string name="committing_person_1_obs_1">Note in the commits list that we have two identical
+        fields with other two fields: <i>Author</i> with <i>Commit</i>, and <i>AuthorDate</i>
+        with <i>CommitDate</i>. We will write the values of these fields manually in this way:
+    </string>
+    <string name="committing_person_cmd_2" translatable="false">GIT_COMMITTER_NAME=\"Fulano de Tal\"
+        GIT_COMMITTER_EMAIL=\"fulano@example.com\" git commit --author=\"Fulano de Tal
+        &lt;fulano\@example.com>\"</string>
+    <string name="committing_person_1_obs_2">Replacing the values according to your needs.</string>
+    <string name="committing_person_1_1">1.1. You can combine this with <i>amend</i> or
+        <i>interactive rebase</i>, even committing in any date, like this example:</string>
+    <string name="committing_person_cmd_3" translatable="false">GIT_COMMITTER_NAME=\"Fulano de Tal\"
+        GIT_COMMITTER_EMAIL=\"fulano@example.com\" GIT_COMMITTER_DATE=\"Sun Apr 5 00:50:11 2015
+        -0300\" git commit --author=\"Fulano de Tal &lt;fulano\@example.com>\" --date=\"Sun Apr 5
+        00:50:11 2015 -0300\"</string>
 </resources>
