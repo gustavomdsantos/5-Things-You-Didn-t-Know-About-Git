@@ -1,5 +1,14 @@
 <h1><img src="https://cdn.rawgit.com/gustavosotnas/5-Things-You-Didn-t-Know-About-Git/master/assets/icon/icon_5ThingsYouDidn'tKnowAboutGit.svg">5 Things You Didn't Know About Git</h1>
 
+Screenshots
+-----------
+| ![1-SplashScreen](assets/screenshots/1-SplashScreen.png) | ![2-MainActivity_portrait](assets/screenshots/2-MainActivity_portrait.png) |
+|----|----|
+| ![4-RepositoryNameActivity](assets/screenshots/4.RepositoryNameActivity.png) | ![5.NewCommitsActivity](assets/screenshots/5.NewCommitsActivity.png) |
+
+| ![](assets/screenshots/3-MainActivity_landscape.png) |
+|----|
+
 **5 Things You Didn't Know About Git** ("*5 coisas que você não sabia sobre o Git*") é um aplicativo que reunirá dicas e tutoriais  de operações úteis (**e perigosas**) de uso do sistema de controle de versão mais usado no mundo *open source*, [**Git**](https://git-scm.com). Eles são exibidos na forma de *[Walkthrough](http://ui-patterns.com/patterns/Tour)* interativo, com design minimalista e inspirador.
 
 As 5 coisas:
