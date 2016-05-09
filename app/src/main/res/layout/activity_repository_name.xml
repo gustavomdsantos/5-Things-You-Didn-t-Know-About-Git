@@ -10,15 +10,44 @@
     android:background="@color/colorPrimary"
     tools:context=".RepositoryNameActivity">
     <LinearLayout
+        android:id="@+id/repositoryForm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_material_light">
+        android:background="@color/background_material_light"
+        android:orientation="vertical">
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:layout_margin="8dp"
+            android:id="@+id/repositoryHeader"
+            android:text="@string/subtitle_activity_repository"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/repositoryEditText"
             android:singleLine="true"
-             />
+            android:hint="@string/hint_activity_repository" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/use_default_name_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_default_name"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClick$defaultRepositoryName"/>
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClick$saveRepositoryName"/>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

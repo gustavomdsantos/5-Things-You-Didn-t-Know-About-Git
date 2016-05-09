@@ -6,4 +6,8 @@
     <string name="thing_4">Mastering Git tags</string>
     <string name="thing_5">Adopting software development best practices with Git</string>
     <string name="title_activity_repository_name">Name of the repository</string>
+    <string name="subtitle_activity_repository">The name of your repository will be use in the content of the texts of the app.</string>
+    <string name="hint_activity_repository">my-git-repository</string>
+    <string name="save">Save</string>
+    <string name="use_default_name">Use default name</string>
 </resources>
